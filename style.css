@@ -1,0 +1,28 @@
+h1 {
+  color:green;
+  left: 500px;
+}
+
+p {
+
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/1e/Hudson_Valley_landscape_from_NY_82_near_Ancram.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+a:link { color: #000000; text-decoration: none}
+a:visited { color: #000000; text-decoration: none}
+a:hover { color: #3366CC; text-decoration: none}
+a:active { color: #000000; text-decoration: none}
