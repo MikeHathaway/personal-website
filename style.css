@@ -11,17 +11,35 @@ h2 {
 }
 
 p {
+  color: grey;
+}
 
+body {
+  background-color: grey;
+}
+
+/* I like the idea but this makes the image looked all stretched */
+img {
+  width: 100%;
+}
+
+
+.website-header{
+  background-color: black;
+}
+
+.website-footer{
+  background-color: black;
 }
 
 .parallax-background {
-  background-color: green;
-  color: green;
+  background-color: black;
+  color: grey;
 }
 
 .parallax {
   /* The image used */
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/1e/Hudson_Valley_landscape_from_NY_82_near_Ancram.jpg");
+  /*background-image: url("assets/HudsonValleyLandscape.jpg");*/
 
   /* Set a specific height */
   height: 500px;
