@@ -24,8 +24,21 @@ img {
 }
 
 
-.website-header{
+.header-container{
   background-color: black;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+
+.header {
+  display: inline-block;
+  height: 50px;
+  margin: 0px auto;
+}
+
+.main-page {
+  margin-top: 100px;
 }
 
 .website-footer{
