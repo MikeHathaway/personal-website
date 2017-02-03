@@ -23,6 +23,15 @@ img {
   width: 100%;
 }
 
+/* html5 solution to header problem */
+header {
+  background-color: black;
+}
+
+nav {
+  display: block;
+}
+
 
 .header-container{
   background-color: black;
