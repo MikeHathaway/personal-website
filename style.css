@@ -1,8 +1,7 @@
 h1 {
   color:green;
   font-size: 50px;
-  font-style: italic;;
-  left: 500px;
+  font-style: italic;
 }
 
 h2 {
@@ -48,13 +47,22 @@ div {
   display: inline-flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-left: 5em;
 }
 
 .navigation-bar {
   display: inline-flex;
+  margin-left: 50em;
+  margin-right: 4em;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-around;
   flex-wrap: nowrap;
+  align-items: center;
+}
+
+.navigation-item {
+  flex-grow: 1;
+  margin-right: 2em;
 }
 
 .background-block {
@@ -67,8 +75,6 @@ div {
 .header-container{
   background-color: silver;
   border: 2px solid grey;
-  width: 100%
-  position: fixed;
   top: 0px;
 }
 
