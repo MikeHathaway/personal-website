@@ -10,17 +10,19 @@ h2 {
   font-size: 30px;
 }
 
+
 p {
   color: grey;
 }
 
 body {
-  background-color: grey;
+  background-color: silver;
 }
 
 /* I like the idea but this makes the image looked all stretched */
 img {
   width: 100%;
+  z-index: -1;
 }
 
 /* html5 solution to header problem */
@@ -32,9 +34,14 @@ nav {
   display: block;
 }
 
+div {
+  box-sizing: border-box;
+}
+
 
 .header-container{
-  background-color: black;
+  background-color: silver;
+  border: 2px solid grey;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -43,11 +50,12 @@ nav {
 .header {
   display: inline-block;
   height: 50px;
-  margin: 0px auto;
+  border: 15px solid silver;
+  bottom: 50px;
 }
 
 .main-page {
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .website-footer{
@@ -62,15 +70,23 @@ nav {
 .parallax {
   /* The image used */
   /*background-image: url("assets/HudsonValleyLandscape.jpg");*/
-
   /* Set a specific height */
-  height: 500px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.background-image {
+  position: relative;
+  z-index: -1;
+}
+
+.text-overlap {
+  position: absolute;
+  z-index: 1;
 }
 
 
