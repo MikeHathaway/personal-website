@@ -84,7 +84,7 @@ body section {
   margin-top: 2vw;
   /* resize width as viewport changes but keep height constant*/
   width: 95vw;
-  height: 100px;
+  height: 10vw;
   background-color: #58586F;
   /* create smooth edges and a nice shadow*/
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -95,6 +95,11 @@ body section {
   align-items: center;
   justify-content: center;
 }
+
+section .content {
+  flex: 1;
+}
+
 
 .text-overlap {
   position: absolute;
