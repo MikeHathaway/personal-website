@@ -1,0 +1,125 @@
+h1 {
+  color:green;
+  font-size: 50px;
+  font-style: italic;
+}
+
+h2 {
+  color: blue;
+  font-size: 30px;
+}
+
+
+p {
+  color: grey;
+}
+
+body {
+  background-color: silver;
+}
+
+/* I like the idea but this makes the image looked all stretched */
+img {
+  width: 100%;
+  z-index: -1;
+}
+
+/* html5 solution to header problem */
+header {
+  background-color: black;
+}
+
+nav {
+  display: block;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    background-image: url("assets/Earthlights.jpg");
+    background-size: 100vw 100vh;
+    z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title-container {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 5em;
+}
+
+.navigation-bar {
+  display: inline-flex;
+  margin-left: 50em;
+  margin-right: 4em;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.navigation-item {
+  flex-grow: 1;
+  margin-right: 2em;
+}
+
+.background-block {
+  background-color: #73ba71;
+  color: black;
+  height: 500px;
+}
+
+
+.header-container{
+  background-color: silver;
+  border: 2px solid grey;
+  top: 0px;
+}
+
+.parallax-background {
+  background-color: black;
+  color: grey;
+}
+
+.parallax {
+  /* The image used */
+  /*background-image: url("assets/HudsonValleyLandscape.jpg");*/
+  /* Set a specific height */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* This doesn't fucking work. Fuck. */
+.background-image {
+  position: relative;
+  z-index: -1;
+}
+
+.text-overlap {
+  position: absolute;
+  z-index: 1;
+}
+
+
+a:link { color: #000000; text-decoration: none}
+a:visited { color: #000000; text-decoration: none}
+a:hover { color: #3366CC; text-decoration: none}
+a:active { color: #000000; text-decoration: none}

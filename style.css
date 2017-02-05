@@ -1,104 +1,99 @@
 h1 {
-  color:green;
-  font-size: 50px;
+  color:white;
+  font-size: 4vw;
   font-style: italic;
 }
 
 h2 {
-  color: blue;
-  font-size: 30px;
+  color: white;
+  font-size: 2vw;
 }
 
-
-p {
-  color: grey;
-}
-
-body {
-  background-color: silver;
-}
-
-/* I like the idea but this makes the image looked all stretched */
 img {
   width: 100%;
   z-index: -1;
 }
 
-/* html5 solution to header problem */
-header {
-  background-color: black;
+section * {
+  color: white;
+  height: auto;
 }
 
-nav {
-  display: block;
-}
-
-div {
-  box-sizing: border-box;
-}
-
-.container {
+/* remove some weird default styling on the body so there is no margin*/
+/* make the body a flex container so all immediate children are flex items (header and section)*/
+body {
+  margin: 0px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.title-container {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-left: 5em;
-}
-
-.navigation-bar {
-  display: inline-flex;
-  margin-left: 50em;
-  margin-right: 4em;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: nowrap;
+  flex-direction: column;
   align-items: center;
+  /*align-content: center;*/
 }
 
-.navigation-item {
-  flex-grow: 1;
+a {
+  text-decoration: none;
+}
+
+/* make main parent of nav items a flex container*/
+/* vertically align to the center all items of the continaer*/
+/* horizontally align the items such that all the extra space is between the items*/
+/* make the width 90% of the view window so that there is an automatic margin*/
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+}
+
+/* make main parent of the nav container a flex container (this makes the nav container a flex item)*/
+/* center align the flex item (there is only one item)*/
+/* apply a shadow to the header but its only visible at the bottom because everything else is touching the view window edge*/
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background-color: #58586F;
+}
+
+/* make main parent of nav navigration bar items a flex container*/
+/* horizontally align the immediate children such that all the extra space is distributed evenly around the items*/
+header nav .navigation-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* for each child item, add 2em of padding to the right*/
+header nav .navigation-bar div{
   margin-right: 2em;
 }
 
-.background-block {
-  background-color: #73ba71;
-  color: black;
-  height: 500px;
-}
-
-
-.header-container{
-  background-color: silver;
-  border: 2px solid grey;
-  top: 0px;
-}
-
-.parallax-background {
-  background-color: black;
-  color: grey;
-}
-
-.parallax {
-  /* The image used */
-  /*background-image: url("assets/HudsonValleyLandscape.jpg");*/
-  /* Set a specific height */
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* This doesn't fucking work. Fuck. */
-.background-image {
-  position: relative;
+#background {
+  /* make element not respond to order of dom by having the position be absolute at 0,0 with a height & width the size of the screen*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  opacity: 0.8;
+  background-image: url("assets/Earthlights.jpg");
+  background-size: 100vw 100vh;
   z-index: -1;
+}
+
+body section {
+  margin-top: 2vw;
+  /* resize width as viewport changes but keep height constant*/
+  width: 95vw;
+  height: 100px;
+  background-color: #58586F;
+  /* create smooth edges and a nice shadow*/
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 2px;
+  /* center all immediate children*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-overlap {
