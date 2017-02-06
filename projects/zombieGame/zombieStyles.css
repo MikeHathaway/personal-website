@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Nosifer);
+
+
+p {
+  font-family: 'Nosifer', serif;
+  color: red;
+  position: relative;
+  left: 15px;
+}
+
+h1 {
+  font-family: 'Nosifer', serif;
+}
+
+ol {
+  color: red;
+}
+
+body {
+  color: red;
+  font-family: 'Nosifer', serif;
+  background-image: url('../images/USA.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: grey;
+}
+
+
+canvas{
+  border: 1px solid blue;
+  position: relative;
+  z-index: 1;
+}
+
+button {
+  border: 1px solid red;
+  background-color: grey;
+  position: relative;
+  top:30px;
+  left:30px;
+  bottom:30px;
+  width: auto;
+  height: 30px;
+}
+
+input{
+  color: black;
+  border: 1px solid red;
+  background-color: grey;
+  position: relative;
+  top: 30px;
+  left:30px;
+  bottom:30px;
+  width: auto;
+  height: 30px;
+}
+
+.outline{
+  color: red;
+  border-color: red;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.red{
+  color: red;
+}
+
+.blue{
+  color: blue;
+}
+
+.background{
+  background-color: grey;
+}
+
+.link-container a:hover {
+    background: #f8f8f8;
+}
+
+a:link { color: #000000; text-decoration: none}
+a:visited { color: #000000; text-decoration: none}
+a:hover { color: #3366CC; text-decoration: none}
+a:active { color: #000000; text-decoration: none}
