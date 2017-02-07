@@ -12,71 +12,59 @@
 </head>
 
 <body>
-
-  <div class="container-fluid">
-
+  <!-- need to center this title; although, it may be redundant with the outerscope titling
+  <div style="align-items: center;">
     <a href="https://github.com/MikeHathaway/Zombie-game"><h1 class="link-container">Welcome to Zombieville<h1></a>
+  </div>
+   -->
 
-    <div class="col">
-      <label for="timer">Generation</label>
-    </div>
+  <!-- flex container -->
+  <section class="flexcontainer">
 
-    <!-- old canvas size was width: 1800, height: 1170 -->
-    <canvas class="outline" id="canv" width="400" height="400"> </canvas>
-
-    <!-- og box canvas
-    <canvas class="outline" id="c" width="1800" height="1170"> </canvas>
-
-  -->
-
-
-    <div class="row background">
-      <div class="col-xs-8 red" >
-        <h1>Initalize Conditions</h1>
-      </div>
-      <div class="row">
-        <form>
-          <div class="col-xm-10 red">
-            <button class="btn btn-autosize" onclick="ominousWarning(); game.startGame(document.getElementById('a').value, document.getElementById('b').value, document.getElementById('c').value, 400, 400); canvasDrawer.displayPopulation();" type="button">Start Game</button>
+    <!-- Left Area -->
+    <section class="left-area">
+      <!-- top-left section -->
+      <h1>Initalize Conditions:</h1>
+      <section class="top-left">
+        <form style="justify-content: space-around">
+          <div style="display:flex">
+            <button class="btn btn-autosize" onclick="ominousWarning(); game.startGame(document.getElementById('a').value, document.getElementById('b').value, document.getElementById('c').value, 700, 450); canvasDrawer.displayPopulation();" type="button">Start Game</button>
             <button class="btn btn-autosize" onclick="game.endGame();" type="button">End Game</button>
             <button class="btn btn-autosize" onclick="game.turn();" type="button">Next Turn</button>
           </div>
-          <div class="row">
-            <div class="col-xs-8">
-              <input type="number" placeholder="Number of generations" id="a" required>
-            </div>
-            <div class="col-xs-8">
-              <input type="number" placeholder="Number of humans" id="b" required>
-            </div>
-            <div class="col-xs-8">
-              <input type="number" placeholder="Percent starting as Zombies" id="c" required>
-            </div>
+          <div style="display:flex">
+            <input type="number" placeholder="Number of generations" id="a" required>
+            <input type="number" placeholder="Number of humans" id="b" required>
+            <input type="number" placeholder="Percent starting as Zombies" id="c" required>
           </div>
         </form>
+      </section>
+      <!--bottom-left section -->
+      <section class="bottom-left">
+        <h1>Rules:</h1>
+          <!-- Explanation of how the game functions-->
+          <p>This is a Zombie outbreak simulator. Specify the initial conditions - how long the simulation runs (number of generations, with each generation lasting one second), how many human agents to start with, and what proportion of those humans are Zombies - and then watch the game play out.</p>
+          <p>Agents have randomly generated personalities, and starting locations. They will then undertake actions each generation, based upon their surroundings and personality type. Some unlucky humans will be converted into Zombies and turn orange. Some unlucky Zombies will be destroyed by humans.</p>
+          <p>All agents have an energy level that will slowly decrease over generations. Humans have significantly more energy than zombies.</p>
+      </section>
+    </section>
+
+    <!-- Right Area -->
+    <section class="right-area">
+      <!-- this can be a later addition
+      <div>
+        <label for="timer">Generation: </label>
+        need to display the current generation
       </div>
-    </div>
-
-    <div class="row">
-      <div class="row background">
-        <p>Rules</p>
-        <ol>1:</ol>
-          <p></p>
-        <ol>2:</ol>
-          <p></p>
-        <ol>3:</ol>
-          <p></p>
+      -->
+      <div>
+        <!-- remember canvas positions are hardcoded in as start game arguments -->
+        <canvas class="outline" id="canv" width="700" height="450"> </canvas>
       </div>
+    </section>
 
-      <div class="background">
-        <div class="row col-xs-15">
-          <a href="https://en.wikipedia.org/wiki/Cellular_automaton"><h1>Cellular Automata</h1></a>
-            <p></p>
-        </div>
+  </section>
 
-      </div>
-    </div>
-
-  </div>
 </body>
 
 </html>

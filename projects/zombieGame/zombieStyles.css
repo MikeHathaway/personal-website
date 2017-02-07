@@ -3,13 +3,14 @@
 
 p {
   font-family: 'Nosifer', serif;
-  color: red;
+  color: black;
   position: relative;
   left: 15px;
 }
 
 h1 {
   font-family: 'Nosifer', serif;
+  font-size: 23px;
 }
 
 ol {
@@ -55,19 +56,42 @@ input{
   height: 30px;
 }
 
+.flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.left-area {
+  justify-content: space-around;
+  align-content: flex-start;
+  left: 10px;
+}
+
+.top-left {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.bottom-left {
+  align-self: center;
+}
+
+.right-area {
+  justify-content: space-around;
+  align-content: center;
+  right: 10px;
+}
+
 .outline{
   color: red;
   border-color: red;
   border-width: 3px;
   border-style: solid;
-}
-
-.red{
-  color: red;
-}
-
-.blue{
-  color: blue;
 }
 
 .background{

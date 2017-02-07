@@ -48,7 +48,7 @@ header nav {
 /* center align the flex item (there is only one item)*/
 /* apply a shadow to the header but its only visible at the bottom because everything else is touching the view window edge*/
 header {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -70,10 +70,10 @@ header nav .navigation-bar div{
 #background {
   /* make element not respond to order of dom by having the position be absolute at 0,0 with a height & width the size of the screen*/
   position: absolute;
-  top: 0;
+  top: 21vh;
   left: 0;
-  height: 100%;
-  width: 100vw;
+  height: 100vh;
+  width: 100%;
   opacity: 0.8;
   background-image: url("assets/Earthlights.jpg");
   background-size: 100vw 100vh;
