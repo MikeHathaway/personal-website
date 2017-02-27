@@ -183,8 +183,6 @@ const game = (function() {
     }
 
     const move = function(agent) {
-        //originally had (-1,agent.speed)
-        //ths causes problems with only positive movements occuring
         let stepX = getRandomInt((-1 * agent.speed), agent.speed);
         let stepY = getRandomInt((-1 * agent.speed), agent.speed);
 

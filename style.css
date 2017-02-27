@@ -100,16 +100,51 @@ body section {
   overflow: auto;
 }
 
+.flexcontainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+
 /*
-.content {
-  flex: 1;
-  height: auto;
+.left-area {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30vw;
+  margin-left: 2em;
+}
+
+.right-area {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30vw;
+  margin-right: 5em;
 }*/
 
 
 .text-overlap {
   position: absolute;
   z-index: 1;
+}
+
+.white-text {
+  color: white;
+}
+
+/* attempt to provide a temporary cover for the project block */
+.project-cover {
+  border: 1px solid #333;
+  /* doesnt produce the desired effect
+  background: black;
+  z-index: 1;
+  */
+}
+
+.project-cover:hover {
+  border: 1px solid #FF0000;
 }
 
 footer {
